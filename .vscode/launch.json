@@ -1,24 +1,23 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
-      "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "s:/ByteLock/src/app/fileHandling",
-      "program": "s:/ByteLock/src/app/fileHandling/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
-    }
-  ]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug encrypt_decrypt",
+			"type": "lldb",
+			"request": "launch",
+			"program": "${workspaceFolder}/encrypt_decrypt",
+			"args": [],
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": "build"
+		},
+		{
+			"name": "Debug cryption (standalone)",
+			"type": "lldb",
+			"request": "launch",
+			"program": "${workspaceFolder}/cryption",
+			"args": ["your_task_data_here"],
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": "build"
+		}
+	]
 }

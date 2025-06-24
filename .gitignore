@@ -1,2 +1,7 @@
+*.env
 .env
+.env.example
 notes.txt
+.o
+.DS_Store
+*.o
