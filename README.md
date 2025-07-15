@@ -95,6 +95,3 @@ All files in the directory (and subdirectories) will be processed in parallel.
 - Submit a pull request with a detailed description of your changes.
 
 ---
-
-## License
-*Specify your license here (e.g., MIT, GPL, etc.).* 
