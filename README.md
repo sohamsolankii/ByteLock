@@ -1,7 +1,7 @@
 # ByteLock
 
 ## Project Description
-ByteLock is a high-performance, multi-process file encryption and decryption tool written in C++. It recursively processes all files in a user-specified directory, encrypting or decrypting them in parallel using a shared memory queue and semaphores for inter-process communication. The encryption key is securely read from a `.env` file. ByteLock is designed for speed, reliability, and ease of use, making it ideal for bulk file security operations.
+ByteLock is a high-performance, multi-process file encryption and decryption tool written in C++. By leveraging both multiprocessing and multithreading, the project aims to enhance the efficiency and performance of cryptographic operations. It recursively processes all files in a user-specified directory, encrypting or decrypting them in parallel using a shared memory queue and semaphores for inter-process communication. The encryption key is securely read from a `.env` file. ByteLock is designed for speed, reliability, and ease of use, making it ideal for bulk file security operations.
 
 ---
 
@@ -12,7 +12,9 @@ ByteLock is a high-performance, multi-process file encryption and decryption too
 - **Customizable Key:** Reads encryption/decryption key from a `.env` file for flexible security.
 - **Robust Error Handling:** Gracefully manages file and system errors.
 - **Cross-Platform Build:** Simple compilation using a Makefile.
-
+- **Process Management:** Implements process creation and management using fork().
+- **Task Queue:** Manages encryption and decryption tasks using a queue structure.
+- **Task Execution:** Child processes execute tasks independently, allowing parallel processing.
 ---
 
 ## Installation Instructions
